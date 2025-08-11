@@ -27,6 +27,6 @@ public class AsyncRequestProcessor {
                 }
                 UserData newUser = new UserData(userId, "Details for " + userId);
                 return newUser;
-        }), executor);
+            }), executor);
     }
 }
