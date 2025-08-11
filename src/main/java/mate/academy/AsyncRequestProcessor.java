@@ -5,8 +5,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
 public class AsyncRequestProcessor {
-    private final Executor executor;
     private static Map<String, UserData> cache = new java.util.concurrent.ConcurrentHashMap<>();
+    private final Executor executor;
 
     public AsyncRequestProcessor(Executor executor) {
         this.executor = executor;
